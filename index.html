@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>HTML, CSS and JavaScript demo</title>
+<link type="text/css" rel="stylesheet" href="css/style.css"/>
+</head>
+<body>
+<!-- Start your code here -->
+
+  <p style="background-color:DodgerBlue;">
+  
+<h1 style="background-color:LightBlue;">Who am I?</h1>
+
+  <p>I am a website coder.I like programming.Here is one tool that you would like :D</p>
+  
+  <html>
+<body>
+
+<p>Click the button to get your coords</p>
+
+<button onclick="getLocation()">Click it</button>
+
+<p id="demo"></p>
+
+<script>
+var x = document.getElementById("demo");
+
+function getLocation() {
+  if (navigator.geolocation) {
+    navigator.geolocation.getCurrentPosition(showPosition);
+  } else { 
+    x.innerHTML = "Geolocation is not supported by this browser.";
+  }
+}
+
+function showPosition(position) {
+  x.innerHTML = "Latitude: " + position.coords.latitude + 
+  "<br>Longitude: " + position.coords.longitude;
+}
+</script>
+
+<script type="text/javascript" src="js/script.js"></script>
+</body>
+</html>
+    
+<body style="background-color:cyan;">
+  
+
+
+
+<h1 id="myHeader">Thanks for visting my website!</h1>
+
+</body>
+</html>
+  
+
+
+  
+
+
+
+  
+
+  
+
+
+  
+
+
+<!-- End your code here -->
+</body>
+</html>
